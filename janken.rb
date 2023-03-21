@@ -28,13 +28,13 @@ def JankenResult
  puts "じゃんけん..."
  puts"0(グー)1(チョキ)2(パー)3(戦わない)"
  player_hand=gets.to_i
- choices = ["グー", "チョキ", "パー","戦わない"]
+ choices = ["グー", "チョキ", "パー",]
  ShowStartMessage(choices)
 
  program_hand = rand(choices.size)
  ShowChoiceInfo(choices[player_hand], choices[program_hand])
  
-if player_hand==3 || program_hand==3
+if player_hand==3
     puts"じゃんけんが放棄されました。ゲームを終了します。"
     result = 3
   exit
